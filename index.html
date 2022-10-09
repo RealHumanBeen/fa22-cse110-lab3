@@ -15,14 +15,14 @@
 
   <section>
     <h2>Brainstorming</h2>
-    <h3>October 09 - 10:30am to 12:30pm</h3>
+    <h3><i>October 09 - 10:30am to 12:30pm</i></h3>
   </section>
 
-  
-  <main>
 
+  <main>
+    <hr>
     <section>
-      <h2>Participants</h2>
+      <h3>Participants</h3>
       <ul>
         <li><a href="mailto:jdoe@gmail.com">John Doe</a></li>
         <li><a href="mailto:jsmith@gmail.com">Jane Smith</a></li>
@@ -32,24 +32,26 @@
       </ul>
     </section>
 
-    <section>
+    <nav>
       <h3>Agenda</h3>
       <ol>
         <li>New Introductions</li>
         <li>Ice-breaker</li>
-        <li>Project Breakdown</li>
+        <li><strong>Project Breakdown</strong></li>
         <li>Sub-teams</li>
       </ol>
-    </section <section>
-    <h3>Open Tasks (previous meetings)</h3>
-    <ul>
-      <li>Role Division</li>
-      <li>Team Leaders</li>
-      <li>Programming Language</li>
-    </ul>
-    </section>
+    </nav>
 
     <section>
+      <h3>Open Tasks (previous meetings)</h3>
+      <ul>
+        <li>Role Division</li>
+        <li>Team Leaders</li>
+        <li>Programming Language</li>
+      </ul>
+    </section>
+
+    <div>
       <h3>New Tasks</h3>
       <ul>
         <li>Technologies</li>
@@ -57,38 +59,146 @@
         <li>Functionality</li>
         <li>Style</li>
       </ul>
-    </section>
+    </div>
 
     <section>
       <h3>Open Discussion</h3>
+      <p>
+        <b>Barney</b> mentions that he will bring <span class="food">pot
+          roast</span> to next weeks <em>potluck</em>.
+      </p>
+      <p>
+        <b>Sally</b> believes another UI developer will be needed for the team
+        to meet next month's delivery schedule.
+        <br>
+        <b>Tony</b> retorts, although he
+        agrees with <b>Sally</b>, he believes bringing on another developer will
+        only
+        further delay the project because time will have to be spent
+        bringing a new member up to speed on the project.
+      </p>
     </section>
 
     <section>
       <h3>Pictures/Diagrams</h3>
-      <img src="assets/diag1.png"
-        alt="Development view of JRE" 
-        width="500"/>
-        <div></div>
-        <img src="assets/diag2.webp"
-        alt="Development view of JRE" 
-        width="500"/>
-      </section>
+      <details>
+        <summary>Diagram 1</summary>
+        <img src="assets/diag1.png" alt="Development view of JRE" width="500" />
+      </details>
+
+      <details>
+        <summary>Diagram 2</summary>
+        <img src="assets/diag2.webp" alt="Java Libraries to Interpreter"
+          width="500" />
+      </details>
+    </section>
 
     <section>
       <h3>Meeting Audio</h3>
+      <audio controls src="assets/meeting-audio.m4a">
+        <a href="assets/meeting-audio.m4a">
+          Download audio
+        </a>
+      </audio>
       <h3>Meeting Video</h3>
       <video controls width="500">
-    
-        <source src="assets/meeting1.mp4"
-                type="video/mp4">
-    
-    </video>
+
+        <source src="assets/meeting-video.mp4" type="video/mp4">
+
+      </video>
     </section>
+
+
+    <!-- form -->
+
+    <section>
+      <h3>Mailing List</h3>
+      If you would like to be added to the mailing list and recieve copies of
+      future meeting minutes, add your information to the following fields:
+      <br><br>
+
+      <form>
+
+        <label for="name-first">First name:</label><br>
+        <input type="text" id="name-first" name="name-first"><br>
+        <label for="name-last">Last name:</label><br>
+        <input type="text" id="name-last" name="name-last"><br>
+
+        <label for="affiliation-choice">Affiliation:</label><br>
+        <input list="affiliation-type" id="affiliation-choice"
+          name="affiliation-choice">
+        <datalist id="affiliation-type">
+          <option value="Employee">
+          <option value="Partner">
+          <option value="No Affilition">
+        </datalist>
+
+        <label for="partner-choice">(if partner):</label>
+
+        <select name="partner" id="partner-select">
+          <option value="">--Please choose an option--</option>
+          <option value="microsoft">Microsoft</option>
+          <option value="google">Google</option>
+          <option value="apple">Apple</option>
+        </select>
+
+        <br><br>
+
+        <fieldset>
+          <legend>Copy type:</legend>
+
+          <input type="radio" id="text" name="copy" value="K">
+          <label for="text">New tasks only </label><br>
+
+          <input type="radio" id="condensed" name="copy" value="S">
+          <label for="condensed">Condensed summary</label><br>
+
+          <input type="radio" id="full" name="copy" value="M" />
+          <label for="full">Full copy</label>
+        </fieldset>
+        <br>
+
+        <fieldset>
+          <legend>Include:</legend>
+
+          <div>
+            <input type="checkbox" id="pictures" name="pictures" checked>
+            <label for="pictures">Picture/Diagrams</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="audio" name="audio">
+            <label for="audio">Audio</label>
+          </div>
+
+
+          <div>
+            <input type="checkbox" id="video" name="video">
+            <label for="video">Video</label>
+          </div>
+        </fieldset>
+
+        <br>
+        <label for="start">Start date:</label>
+
+        <input type="date" id="start" name="trip-start" value="2022-10-10"
+          min="2022-10-10" max="2025-01-01">
+        <br><br>
+
+        <label for="story">Feedback (optional):</label>
+        <br>
+        <textarea id="story" name="story" rows="5" cols="33"></textarea>
+        <br>
+        <button class="submit" type="button">
+          Submit</button>
+      </form>
+
+
 
   </main>
 
   <footer>
-    <p>© 2022 CSE 110</p>
+    <p>© 2022 by CSE 110</p>
   </footer>
 
 </body>
