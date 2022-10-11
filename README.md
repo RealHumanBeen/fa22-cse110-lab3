@@ -1,2 +1,2 @@
-# Lab 2 - Starter
-https://realhumanbeen.github.io/CSE-110-LAB2/
+# Lab 3
+https://realhumanbeen.github.io/fa22-cse110-lab3/
