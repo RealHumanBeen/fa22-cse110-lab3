@@ -7,9 +7,13 @@ h2 {
 }
 
 h3 {
-  color: hsl(147, 50%, 47%)
+  color: hsl(147, 68%, 32%)
 }
 
 .agenda-header {
   color: orange;
+}
+
+body {
+  background-color: #d6d3ea;
 }
