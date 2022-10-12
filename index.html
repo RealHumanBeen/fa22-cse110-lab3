@@ -163,50 +163,52 @@
 
         <!-- Mailing List Copy Type -->
         <div class="copy-wrapper">
-        <fieldset class="copy-type">
-          <legend>Copy type:</legend>
+          <fieldset class="copy-type">
+            <legend>Copy type:</legend>
 
-          <input type="radio" id="text" name="copy" value="K">
-          <label for="text">New tasks only </label><br>
+            <input type="radio" id="text" name="copy" value="K">
+            <label for="text">New tasks only </label><br>
 
-          <input type="radio" id="condensed" name="copy" value="S">
-          <label for="condensed">Condensed summary</label><br>
+            <input type="radio" id="condensed" name="copy" value="S">
+            <label for="condensed">Condensed summary</label><br>
 
-          <input type="radio" id="full" name="copy" value="M" />
-          <label for="full">Full copy</label>
-        </fieldset>
-      </div>
-   
+            <input type="radio" id="full" name="copy" value="M" />
+            <label for="full">Full copy</label>
+          </fieldset>
+        </div>
+
 
         <!-- Mailing List Add-ons -->
         <div class="addon-wrapper">
-        <fieldset class="mailing-list">
-          <legend>Include:</legend>
+          <fieldset class="mailing-list">
+            <legend>Include:</legend>
 
-          <div>
-            <input type="checkbox" id="pictures" name="pictures" checked>
-            <label for="pictures">Picture/Diagrams</label>
-          </div>
+            <div>
+              <input type="checkbox" id="pictures" name="pictures" checked>
+              <label for="pictures">Picture/Diagrams</label>
+            </div>
 
-          <div>
-            <input type="checkbox" id="audio" name="audio">
-            <label for="audio">Audio</label>
-          </div>
+            <div>
+              <input type="checkbox" id="audio" name="audio">
+              <label for="audio">Audio</label>
+            </div>
 
-          <div class="video-wrapper">
-            <input type="checkbox" id="video" name="video">
-            <label for="video">Video</label>
-          </div>
-        </fieldset>
-      </div>
+            <div>
+              <input type="checkbox" id="video" name="video">
+              <label for="video">Video</label>
+            </div>
+          </fieldset>
+        </div>
 
         <br>
 
         <!-- Mailing List Start Date -->
-        <label for="start">Start date:</label>
+        <div class="start-date-wrapper">
+          <label for="start">Start date:</label>
 
-        <input type="date" id="start" name="trip-start" value="2022-10-10"
-          min="2022-10-10" max="2025-01-01">
+          <input type="date" id="start" name="trip-start" value="2022-10-10"
+            min="2022-10-10" max="2025-01-01">
+        </div>
         <br><br>
 
         <!-- Meeting Feedback -->

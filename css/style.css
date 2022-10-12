@@ -106,3 +106,13 @@ video {
   max-width: 50em;
   min-width: 1em;
 }
+
+.submit {
+  position: relative;
+  top: 5px; 
+  left: 228px;
+}
+
+.start-date-wrapper {
+  position: static;
+}
