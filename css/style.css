@@ -6,6 +6,8 @@ header {
 
 h2 {
   color: #1e00cb;
+
+  display: block;
 }
 
 h3 {
@@ -84,4 +86,16 @@ body {
   border-right-width: 2px;
   
   border-radius: 10px;
+}
+
+.secret-header {
+  display: none;
+}
+
+.copy-wrapper {
+  display: inline-block;
+}
+
+.addon-wrapper {
+  display: inline-block;
 }
