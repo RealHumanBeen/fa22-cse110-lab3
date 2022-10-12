@@ -10,6 +10,11 @@
 
 <body>
 
+  <!-- Secret Header -->
+  <section class="secret-header">
+    <h1>This is a secret header!</h1>
+  </section>
+
   <!-- General Meeting Info -->
   <!-- Page Header -->
   <header class="page-header">
@@ -48,7 +53,7 @@
     </nav>
 
     <!-- Previous Meeting Items -->
-    <section>
+    <section class="prev-tasks">
       <h3>Open Tasks (previous meetings)</h3>
       <ul>
         <li>Role Division</li>
@@ -58,7 +63,7 @@
     </section>
 
     <!-- Current Meeting Items -->
-    <div>
+    <div class="new-tasks">
       <h3>New Tasks</h3>
       <ul>
         <li>Technologies</li>
@@ -90,15 +95,16 @@
     <!-- Meeting Pictures -->
     <section>
       <h3>Pictures/Diagrams</h3>
-      <details >
+      <details>
         <summary>Diagram 1</summary>
-        <img class="pic1" src="assets/diag1.png" alt="Development view of JRE" width="500" />
+        <img class="pic1" src="assets/diag1.png" alt="Development view of JRE"
+          width="500" />
       </details>
 
       <details>
         <summary>Diagram 2</summary>
-        <img class="pic2" src="assets/diag2.webp" alt="Java Libraries to Interpreter"
-          width="500" />
+        <img class="pic2" src="assets/diag2.webp"
+          alt="Java Libraries to Interpreter" width="500" />
       </details>
     </section>
 
@@ -128,9 +134,11 @@
 
         <!-- Mailing List Name -->
         <label for="name-first">First name:</label><br>
-        <input class="first-name-el" type="text" id="name-first" name="name-first"><br>
+        <input class="first-name-el" type="text" id="name-first"
+          name="name-first"><br>
         <label for="name-last">Last name:</label><br>
-        <input class="last-name-el" type="text" id="name-last" name="name-last"><br>
+        <input class="last-name-el" type="text" id="name-last"
+          name="name-last"><br>
 
         <!-- Mailing List Company Affiliation -->
         <label for="affiliation-choice">Affiliation:</label><br>
@@ -154,6 +162,7 @@
         <br><br>
 
         <!-- Mailing List Copy Type -->
+        <div class="copy-wrapper">
         <fieldset class="copy-type">
           <legend>Copy type:</legend>
 
@@ -166,9 +175,11 @@
           <input type="radio" id="full" name="copy" value="M" />
           <label for="full">Full copy</label>
         </fieldset>
-        <br>
+      </div>
+   
 
         <!-- Mailing List Add-ons -->
+        <div class="addon-wrapper">
         <fieldset class="mailing-list">
           <legend>Include:</legend>
 
@@ -187,6 +198,7 @@
             <label for="video">Video</label>
           </div>
         </fieldset>
+      </div>
 
         <br>
 
@@ -200,7 +212,8 @@
         <!-- Meeting Feedback -->
         <label for="story">Feedback (optional):</label>
         <br>
-        <textarea class="feedback" id="story" name="story" rows="5" cols="33"></textarea>
+        <textarea class="feedback" id="story" name="story" rows="5"
+          cols="33"></textarea>
         <br>
         <button class="submit" type="button">
           Submit</button>
