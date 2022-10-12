@@ -4,11 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>Meeting Minutes</title>
-  <link rel="icon" href="assets/icons8-meeting-48.png"/>
+  <link rel="icon" href="assets/icons8-meeting-48.png" />
 </head>
 
 <body>
 
+  <!-- General Meeting Info -->
+  <!-- Page Header -->
   <header class="page-header">
     <h1>Meeting Minutes of Team 4</h1>
   </header>
@@ -18,9 +20,10 @@
     <h3><i>October 09 - 10:30am to 12:30pm</i></h3>
   </section>
 
-
   <main>
     <hr>
+
+    <!-- Attendees List -->
     <section>
       <h3>Participants</h3>
       <ul>
@@ -32,6 +35,7 @@
       </ul>
     </section>
 
+    <!-- Agenda Items -->
     <nav>
       <h3>Agenda</h3>
       <ol>
@@ -42,6 +46,7 @@
       </ol>
     </nav>
 
+    <!-- Previous Meeting Items -->
     <section>
       <h3>Open Tasks (previous meetings)</h3>
       <ul>
@@ -51,6 +56,7 @@
       </ul>
     </section>
 
+    <!-- Current Meeting Items -->
     <div>
       <h3>New Tasks</h3>
       <ul>
@@ -61,6 +67,7 @@
       </ul>
     </div>
 
+    <!-- Roundtable Discussion -->
     <section>
       <h3>Open Discussion</h3>
       <p>
@@ -79,20 +86,22 @@
       </p>
     </section>
 
+    <!-- Meeting Pictures -->
     <section>
       <h3>Pictures/Diagrams</h3>
       <details>
         <summary>Diagram 1</summary>
-        <img src="assets/diag1.png" alt="Development view of JRE" width="500"/>
+        <img src="assets/diag1.png" alt="Development view of JRE" width="500" />
       </details>
 
       <details>
         <summary>Diagram 2</summary>
         <img src="assets/diag2.webp" alt="Java Libraries to Interpreter"
-          width="500"/>
+          width="500" />
       </details>
     </section>
 
+    <!-- Meeting Audio/Video -->
     <section>
       <h3>Meeting Audio</h3>
       <audio controls src="assets/meeting-audio.m4a">
@@ -102,15 +111,12 @@
       </audio>
       <h3>Meeting Video</h3>
       <video controls width="500">
-
         <source src="assets/meeting-video.mp4" type="video/mp4">
-
       </video>
     </section>
 
 
-    <!-- Form -->
-
+    <!-- Mailing List Form -->
     <section>
       <h3>Mailing List</h3>
       If you would like to be added to the mailing list and recieve copies of
@@ -119,11 +125,13 @@
 
       <form>
 
+        <!-- Mailing List Name -->
         <label for="name-first">First name:</label><br>
         <input type="text" id="name-first" name="name-first"><br>
         <label for="name-last">Last name:</label><br>
         <input type="text" id="name-last" name="name-last"><br>
 
+        <!-- Mailing List Company Affiliation -->
         <label for="affiliation-choice">Affiliation:</label><br>
         <input list="affiliation-type" id="affiliation-choice"
           name="affiliation-choice">
@@ -144,6 +152,7 @@
 
         <br><br>
 
+        <!-- Mailing List Copy Type -->
         <fieldset>
           <legend>Copy type:</legend>
 
@@ -153,11 +162,12 @@
           <input type="radio" id="condensed" name="copy" value="S">
           <label for="condensed">Condensed summary</label><br>
 
-          <input type="radio" id="full" name="copy" value="M"/>
+          <input type="radio" id="full" name="copy" value="M" />
           <label for="full">Full copy</label>
         </fieldset>
         <br>
 
+        <!-- Mailing List Add-ons -->
         <fieldset>
           <legend>Include:</legend>
 
@@ -171,7 +181,6 @@
             <label for="audio">Audio</label>
           </div>
 
-
           <div>
             <input type="checkbox" id="video" name="video">
             <label for="video">Video</label>
@@ -179,12 +188,15 @@
         </fieldset>
 
         <br>
+
+        <!-- Mailing List Start Date -->
         <label for="start">Start date:</label>
 
         <input type="date" id="start" name="trip-start" value="2022-10-10"
           min="2022-10-10" max="2025-01-01">
         <br><br>
 
+        <!-- Meeting Feedback -->
         <label for="story">Feedback (optional):</label>
         <br>
         <textarea id="story" name="story" rows="5" cols="33"></textarea>
@@ -194,6 +206,7 @@
       </form>
     </section>
 
+    <!-- Page Footer -->
     <footer>
       <p>© 2022 by CSE 110</p>
     </footer>
