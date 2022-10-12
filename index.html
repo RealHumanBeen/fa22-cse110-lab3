@@ -128,13 +128,13 @@
 
         <!-- Mailing List Name -->
         <label for="name-first">First name:</label><br>
-        <input type="text" id="name-first" name="name-first"><br>
+        <input class="first-name-el" type="text" id="name-first" name="name-first"><br>
         <label for="name-last">Last name:</label><br>
-        <input type="text" id="name-last" name="name-last"><br>
+        <input class="last-name-el" type="text" id="name-last" name="name-last"><br>
 
         <!-- Mailing List Company Affiliation -->
         <label for="affiliation-choice">Affiliation:</label><br>
-        <input list="affiliation-type" id="affiliation-choice"
+        <input class="input-el" list="affiliation-type" id="affiliation-choice"
           name="affiliation-choice">
         <datalist id="affiliation-type">
           <option value="Employee">
@@ -154,7 +154,7 @@
         <br><br>
 
         <!-- Mailing List Copy Type -->
-        <fieldset>
+        <fieldset class="copy-type">
           <legend>Copy type:</legend>
 
           <input type="radio" id="text" name="copy" value="K">
@@ -169,7 +169,7 @@
         <br>
 
         <!-- Mailing List Add-ons -->
-        <fieldset>
+        <fieldset class="mailing-list">
           <legend>Include:</legend>
 
           <div>
@@ -200,7 +200,7 @@
         <!-- Meeting Feedback -->
         <label for="story">Feedback (optional):</label>
         <br>
-        <textarea id="story" name="story" rows="5" cols="33"></textarea>
+        <textarea class="feedback" id="story" name="story" rows="5" cols="33"></textarea>
         <br>
         <button class="submit" type="button">
           Submit</button>

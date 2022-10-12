@@ -17,3 +17,27 @@ h3 {
 body {
   background-color: #d6d3ea;
 }
+
+.copy-type {
+  width: 16vw;
+}
+
+.mailing-list {
+  width: 15em;
+}
+
+.feedback {
+  height: 10vh;
+}
+
+.first-name-el {
+  width: 4cm;
+}
+
+.last-name-el {
+  width: 114pt;
+}
+
+.input-el {
+  width: 2in;
+}
