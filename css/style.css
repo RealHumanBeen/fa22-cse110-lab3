@@ -116,3 +116,12 @@ video {
 .start-date-wrapper {
   position: static;
 }
+
+.submit:hover {
+  color: white;
+  background-color: red;
+}
+
+summary:active {
+  color: red;
+}
