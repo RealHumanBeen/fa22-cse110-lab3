@@ -1,5 +1,7 @@
 header {
   color: rgb(255,0,0);
+  text-decoration: underline red;
+  text-align: center;
 }
 
 h2 {
