@@ -1,0 +1,15 @@
+header {
+  color: rgb(255,0,0);
+}
+
+h2 {
+  color: #1e00cb;
+}
+
+h3 {
+  color: hsl(147, 50%, 47%)
+}
+
+.agenda-header {
+  color: orange;
+}
