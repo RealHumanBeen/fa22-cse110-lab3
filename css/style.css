@@ -99,3 +99,10 @@ body {
 .addon-wrapper {
   display: inline-block;
 }
+
+video {
+  height: 23em;
+  width: 40em;
+  max-width: 50em;
+  min-width: 1em;
+}
