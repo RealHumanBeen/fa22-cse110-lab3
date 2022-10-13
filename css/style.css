@@ -125,3 +125,42 @@ video {
 summary:active {
   color: red;
 }
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 50px;
+  text-align: left;
+}
+
+.flex-agenda {
+  padding: 5px;
+}
+
+.flex-prev-tasks {
+  padding: 5px;
+}
+
+.flex-new-tasks {
+  padding: 5px;
+}
+
+.grid-container {
+  display: inline-grid;
+  row-gap: 20px;
+  justify-items: start;
+}
+
+.grid-pictures {
+  align-self: start;
+}
+
+.grid-audio {
+  align-self: start;
+}
+
+.grid-video {
+  align-self: start;
+}
