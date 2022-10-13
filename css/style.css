@@ -164,3 +164,9 @@ summary:active {
 .grid-video {
   align-self: start;
 }
+
+@media screen and (max-width: 800px) {
+  body {
+    background-color: #d9cdaf;
+  }
+}
