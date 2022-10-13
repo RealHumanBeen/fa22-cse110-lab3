@@ -21,10 +21,10 @@
     <h1>Meeting Minutes of Team 4</h1>
   </header>
 
-  <section>
+  <nav>
     <h2>Brainstorming</h2>
     <h3><i>October 09 - 10:30am to 12:30pm</i></h3>
-  </section>
+  </nav>
 
   <main>
     <hr>
@@ -41,36 +41,41 @@
       </ul>
     </section>
 
-    <!-- Agenda Items -->
-    <nav>
-      <h3 class="agenda-header">Agenda</h3>
-      <ol>
-        <li>New Introductions</li>
-        <li>Ice-breaker</li>
-        <li><strong>Project Breakdown</strong></li>
-        <li>Sub-teams</li>
-      </ol>
-    </nav>
+    <!-- Flex Container -->
+    <div class="flex-container">
 
-    <!-- Previous Meeting Items -->
-    <section class="prev-tasks">
-      <h3>Open Tasks (previous meetings)</h3>
-      <ul>
-        <li>Role Division</li>
-        <li>Team Leaders</li>
-        <li>Programming Language</li>
-      </ul>
-    </section>
+      <!-- Agenda Items -->
+      <div class="flex-agenda">
+        <h3 class="agenda-header">Agenda</h3>
+        <ol>
+          <li>New Introductions</li>
+          <li>Ice-breaker</li>
+          <li><strong>Project Breakdown</strong></li>
+          <li>Sub-teams</li>
+        </ol>
+      </div>
 
-    <!-- Current Meeting Items -->
-    <div class="new-tasks">
-      <h3>New Tasks</h3>
-      <ul>
-        <li>Technologies</li>
-        <li>Formatting</li>
-        <li>Functionality</li>
-        <li>Style</li>
-      </ul>
+      <!-- Previous Meeting Items -->
+      <div class="flex-prev-tasks">
+        <h3>Open Tasks (previous meetings)</h3>
+        <ul>
+          <li>Role Division</li>
+          <li>Team Leaders</li>
+          <li>Programming Language</li>
+        </ul>
+      </div>
+
+      <!-- Current Meeting Items -->
+      <div class="flex-new-tasks">
+        <h3>New Tasks</h3>
+        <ul>
+          <li>Technologies</li>
+          <li>Formatting</li>
+          <li>Functionality</li>
+          <li>Style</li>
+        </ul>
+      </div>
+
     </div>
 
     <!-- Roundtable Discussion -->
@@ -92,35 +97,44 @@
       </p>
     </section>
 
-    <!-- Meeting Pictures -->
-    <section>
-      <h3>Pictures/Diagrams</h3>
-      <details>
-        <summary>Diagram 1</summary>
-        <img class="pic1" src="assets/diag1.png" alt="Development view of JRE"
-          width="500" />
-      </details>
+    <!-- Grid Container-->
+    <div class="grid-container">
+      
+      <!-- Meeting Pictures -->
+      <div class="grid-pictures">
+        <h3>Pictures/Diagrams</h3>
+        <details>
+          <summary>Diagram 1</summary>
+          <img class="pic1" src="assets/diag1.png" alt="Development view of JRE"
+            width="500" />
+        </details>
 
-      <details>
-        <summary>Diagram 2</summary>
-        <img class="pic2" src="assets/diag2.webp"
-          alt="Java Libraries to Interpreter" width="500" />
-      </details>
-    </section>
+        <details>
+          <summary>Diagram 2</summary>
+          <img class="pic2" src="assets/diag2.webp"
+            alt="Java Libraries to Interpreter" width="500" />
+        </details>
+      </div>
 
-    <!-- Meeting Audio/Video -->
-    <section>
-      <h3>Meeting Audio</h3>
-      <audio controls src="assets/meeting-audio.m4a">
-        <a href="assets/meeting-audio.m4a">
-          Download audio
-        </a>
-      </audio>
-      <h3>Meeting Video</h3>
-      <video controls width="500">
-        <source src="assets/meeting-video.mp4" type="video/mp4">
-      </video>
-    </section>
+      <!-- Meeting Audio -->
+      <div class="grid-audio">
+        <h3>Meeting Audio</h3>
+        <audio controls src="assets/meeting-audio.m4a">
+          <a href="assets/meeting-audio.m4a">
+            Download audio
+          </a>
+        </audio>
+      </div>
+
+      <!-- Meeting Video -->
+      <div class="grid-video">
+        <h3>Meeting Video</h3>
+        <video controls width="500">
+          <source src="assets/meeting-video.mp4" type="video/mp4">
+        </video>
+      </div>
+
+    </div>
 
 
     <!-- Mailing List Form -->
