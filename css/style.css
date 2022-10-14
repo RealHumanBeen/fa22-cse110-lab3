@@ -180,3 +180,40 @@ summary:active {
     background-color: #d9cdaf;
   }
 }
+
+/* CSS Selector Application */
+#feet {
+  color: blue;
+}
+
+*#naming {
+  color: rgb(40, 147, 149);
+}
+
+a[href] {
+  font-style: italic;
+}
+
+h1,h2,h3 {
+  font-style: italic;
+}
+
+li strong {
+  text-decoration: line-through;
+}
+
+div > ul {
+  color: #1e00cb;
+}
+
+h2 + h3 {
+  color: red;
+}
+
+li ~ li {
+  font-weight: bold;
+}
+
+button.submit {
+  color: green;
+}
